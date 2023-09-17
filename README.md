@@ -10,6 +10,7 @@ CNN lần đầu tiên được phát triển và sử dụng vào khoảng nh�
 
 ## CNN là gì?
 Trong học sâu, mạng nơ-ron tích chập ( CNN/ConvNet ) là một lớp mạng nơ-ron sâu, được áp dụng phổ biến nhất để phân tích hình ảnh trực quan. Bây giờ khi nghĩ đến mạng nơ-ron, chúng ta nghĩ đến phép nhân ma trận nhưng ConvNet thì không như vậy. Nó sử dụng một kỹ thuật đặc biệt gọi là Convolution. Trong toán học tích chập là một phép toán trên hai hàm tạo ra hàm thứ ba biểu thị hình dạng của hàm này được biến đổi bởi hàm kia như thế nào.
+
 ![image](https://github.com/thangdtph27626/CNN/assets/109157942/2f7e83a5-697d-4e37-b9b8-586c7daf35f8)
 
 Nhưng chúng ta không thực sự cần phải đi sâu vào phần toán học để hiểu CNN là gì hoặc nó hoạt động như thế nào.
@@ -27,6 +28,7 @@ Trước khi bắt đầu làm việc với CNN, chúng ta hãy tìm hiểu nh�
 ![image](https://github.com/thangdtph27626/CNN/assets/109157942/0e567df8-9cce-448c-9b55-af31bb41952c)
 
 Hình ảnh trên cho thấy tích chập là gì. Chúng ta lấy bộ lọc/hạt nhân (ma trận 3 × 3) và áp dụng nó cho hình ảnh đầu vào để có được tính năng tích chập. Tính năng phức tạp này được chuyển sang lớp tiếp theo.
+
 <figure class="wp-block-image"><img decoding="async" src="https://editor.analyticsvidhya.com/uploads/419681_GcI7G-JLAQiEoCON7xFbhg.gif" alt="Quá trình tích chập trong Mạng thần kinh tích chập"></figure>
 
 Trong trường hợp màu RGB, kênh hãy xem hoạt ảnh này để hiểu hoạt động của nó
@@ -38,7 +40,9 @@ Mạng nơ-ron tích chập bao gồm nhiều lớp nơ-ron nhân tạo. Tế b�
 Lớp đầu tiên thường trích xuất các đặc điểm cơ bản như các cạnh ngang hoặc chéo. Đầu ra này được chuyển sang lớp tiếp theo để phát hiện các tính năng phức tạp hơn như các góc hoặc các cạnh tổ hợp. Khi chúng ta tiến sâu hơn vào mạng, nó có thể xác định các tính năng phức tạp hơn nữa như vật thể, khuôn mặt,...
 
 ![image](https://github.com/thangdtph27626/CNN/assets/109157942/746128e3-322b-4a7a-87ba-1f025a193691)
+
 Dựa trên bản đồ kích hoạt của lớp tích chập cuối cùng, lớp phân loại đưa ra một tập hợp điểm tin cậy (giá trị từ 0 đến 1) xác định khả năng hình ảnh thuộc về một “lớp”. Ví dụ: nếu bạn có ConvNet phát hiện mèo, chó và ngựa thì đầu ra của lớp cuối cùng là khả năng hình ảnh đầu vào có chứa bất kỳ động vật nào trong số đó.
+
 ![image](https://github.com/thangdtph27626/CNN/assets/109157942/9b51178b-ea54-45cc-a979-fabf1c8d6a62)
 
 ## Lớp gộp là gì?
